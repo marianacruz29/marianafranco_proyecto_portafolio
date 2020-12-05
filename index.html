@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Mariana Franco</title>
+    <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
     <section id="inicio">
-        <nav>
+        <nav class="navegacion">
             <ul>
-                <li><a href="#sobre mi">Sobre mi </a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li class="navItem"> <a href="#sobre mi">Sobre mi </a></li>
+                <li class="navItem"> <a href="#proyectos">Proyectos</a></li>
+                <li class="navItem"> <a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     <div id="portada">
-        <img src="./img/avatar.png" alt="Avatar">
+        <img class="portadaImagen" src="./img/avatar.png" alt="Avatar">
         <h2>Mariana Franco </h2>
         <h3>Frontend Developer</h3>
     </div>
@@ -29,26 +30,28 @@
             <h2>Proyectos</h2>
             <h3>Últimos Trabajos</h3>
         </div>
-        <div id="">
+        <div>
             <img src="./img/img1.jpg" alt="img1">
             <img src="./img/img2.png" alt="img2">
             <img src="./img/img3.png" alt="img3">
         </div>
     </section>
     <section id="contacto">
-        <h2>Contacto</h2>
-        <h3>Escríbeme, Trabajemos Juntos</h3>
+        <div class="contactoTitulos">
+            <h2 class="contactoTitulo" >Contacto</h2>
+            <h3 class="contactoSubtitulo">Escríbeme, Trabajemos Juntos</h3>
+        </div>
         <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="nombre">
-            <label for="email"> E-mail</label>
-            <input type="email" id="email" placeholder="ejemplo@correo.com">
-            <label for="asunto">Asunto</label>
-            <input type="text" id="asunto" placeholder="Asunto">
-            <label for="mensaje">Mensaje.</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="1"></textarea>
-            <input type="submit" placeholder="Mensaje"> 
-        </form>
+            <div class="filaSuperior">
+                <input type="text" id="nombre" placeholder="Nombre">
+                <input type="email" id="email" placeholder="ejemplo@correo.com">
+                <input type="text" id="asunto" placeholder="Asunto">
+            </div>
+            <div class="filaInterior">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="1" placeholder="Mensaje"></textarea>
+            </div>
+            <input id="btnEnviar" type="submit">
+            </form>     
     </section>
     <footer>
         <p>©Copyright 2020 Mariana Franco. Todos los derechos reservados.</p>  
